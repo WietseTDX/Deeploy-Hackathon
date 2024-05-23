@@ -89,76 +89,360 @@
   },
   "outputTensorShape": "(1)",
   "features": [
-    "age",
-    "time_in_hospital",
-    "num_lab_procedures",
-    "num_procedures",
-    "num_medications",
-    "number_outpatient",
-    "number_emergency",
-    "number_inpatient",
-    "number_diagnoses",
-    "A1Cresult",
-    "metformin",
-    "repaglinide",
-    "glimepiride",
-    "glipizide",
-    "glyburide",
-    "pioglitazone",
-    "rosiglitazone",
-    "insulin",
-    "change",
-    "diabetesMed",
-    "race_Asian",
-    "race_Caucasian",
-    "race_Hispanic",
-    "race_Other",
-    "gender_Male",
-    "admission_type_id_Newborn",
-    "admission_type_id_Other",
-    "admission_type_id_Urgent",
-    "discharge_disposition_id_2",
-    "discharge_disposition_id_3",
-    "discharge_disposition_id_4",
-    "discharge_disposition_id_5",
-    "discharge_disposition_id_6",
-    "discharge_disposition_id_7",
-    "discharge_disposition_id_8",
-    "discharge_disposition_id_9",
-    "discharge_disposition_id_10",
-    "discharge_disposition_id_11",
-    "discharge_disposition_id_12",
-    "discharge_disposition_id_13",
-    "discharge_disposition_id_14",
-    "discharge_disposition_id_15",
-    "discharge_disposition_id_16",
-    "discharge_disposition_id_17",
-    "discharge_disposition_id_18",
-    "discharge_disposition_id_19",
-    "discharge_disposition_id_20",
-    "discharge_disposition_id_22",
-    "discharge_disposition_id_23",
-    "discharge_disposition_id_24",
-    "discharge_disposition_id_25",
-    "discharge_disposition_id_27",
-    "discharge_disposition_id_28",
-    "medical_specialty_General practice",
-    "medical_specialty_Internal medicine and related",
-    "medical_specialty_Other",
-    "medical_specialty_Surgery",
-    "diag_1_Diabetes",
-    "diag_1_Musculoskeletal disease",
-    "diag_1_Other",
-    "diag_1_Respiratory disease",
-    "diag_2_Diabetes",
-    "diag_2_Musculoskeletal disease",
-    "diag_2_Other",
-    "diag_2_Respiratory disease",
-    "diag_3_Diabetes",
-    "diag_3_Musculoskeletal disease",
-    "diag_3_Other",
-    "diag_3_Respiratory disease",
-    "max_glu_serum_>300",
-    "max_glu_serum_Norm"
+    {
+      "name": "age",
+      "observedMin": 0,
+      "observedMax": 41
+    },
+    {
+      "name": "time_in_hospital",
+      "observedMin": 0,
+      "observedMax": 59
+    },
+    {
+      "name": "num_lab_procedures",
+      "observedMin": 0,
+      "observedMax": 25
+    },
+    {
+      "name": "num_procedures",
+      "observedMin": 0,
+      "observedMax": 44
+    },
+    {
+      "name": "num_medications",
+      "observedMin": 0,
+      "observedMax": 51
+    },
+    {
+      "name": "number_outpatient",
+      "observedMin": 0,
+      "observedMax": 55
+    },
+    {
+      "name": "number_emergency",
+      "observedMin": 0,
+      "observedMax": 70
+    },
+    {
+      "name": "number_inpatient",
+      "observedMin": 0,
+      "observedMax": 75
+    },
+    {
+      "name": "number_diagnoses",
+      "observedMin": 0,
+      "observedMax": 85
+    },
+    {
+      "name": "A1Cresult",
+      "observedMin": 0,
+      "observedMax": 95
+    },
+    {
+      "name": "metformin",
+      "observedMin": 0,
+      "observedMax": 47
+    },
+    {
+      "name": "repaglinide",
+      "observedMin": 0,
+      "observedMax": 65
+    },
+    {
+      "name": "glimepiride",
+      "observedMin": 0,
+      "observedMax": 60
+    },
+    {
+      "name": "glipizide",
+      "observedMin": 0,
+      "observedMax": 85
+    },
+    {
+      "name": "glyburide",
+      "observedMin": 0,
+      "observedMax": 65
+    },
+    {
+      "name": "pioglitazone",
+      "observedMin": 0,
+      "observedMax": 75
+    },
+    {
+      "name": "rosiglitazone",
+      "observedMin": 0,
+      "observedMax": 55
+    },
+    {
+      "name": "insulin",
+      "observedMin": 0,
+      "observedMax": 55
+    },
+    {
+      "name": "change",
+      "observedMin": 0,
+      "observedMax": 75
+    },
+    {
+      "name": "diabetesMed",
+      "observedMin": 0,
+      "observedMax": 75
+    },
+    {
+      "name": "race_Asian",
+      "observedMin": 0,
+      "observedMax": 66
+    },
+    {
+      "name": "race_Caucasian",
+      "observedMin": 0,
+      "observedMax": 65
+    },
+    {
+      "name": "race_Hispanic",
+      "observedMin": 0,
+      "observedMax": 75
+    },
+    {
+      "name": "race_Other",
+      "observedMin": 0,
+      "observedMax": 85
+    },
+    {
+      "name": "gender_Male",
+      "observedMin": 0,
+      "observedMax": 75
+    },
+    {
+      "name": "admission_type_id_Newborn",
+      "observedMin": 0,
+      "observedMax": 55
+    },
+    {
+      "name": "admission_type_id_Other",
+      "observedMin": 0,
+      "observedMax": 85
+    },
+    {
+      "name": "admission_type_id_Urgent",
+      "observedMin": 0,
+      "observedMax": 55
+    },
+    {
+      "name": "discharge_disposition_id_2",
+      "observedMin": 0,
+      "observedMax": 53
+    },
+    {
+      "name": "discharge_disposition_id_3",
+      "observedMin": 0,
+      "observedMax": 85
+    },
+    {
+      "name": "discharge_disposition_id_4",
+      "observedMin": 0,
+      "observedMax": 87
+    },
+    {
+      "name": "discharge_disposition_id_5",
+      "observedMin": 0,
+      "observedMax": 75
+    },
+    {
+      "name": "discharge_disposition_id_6",
+      "observedMin": 0,
+      "observedMax": 75
+    },
+    {
+      "name": "discharge_disposition_id_7",
+      "observedMin": 0,
+      "observedMax": 65
+    },
+    {
+      "name": "discharge_disposition_id_8",
+      "observedMin": 0,
+      "observedMax": 75
+    },
+    {
+      "name": "discharge_disposition_id_9",
+      "observedMin": 0,
+      "observedMax": 65
+    },
+    {
+      "name": "discharge_disposition_id_10",
+      "observedMin": 0,
+      "observedMax": 75
+    },
+    {
+      "name": "discharge_disposition_id_11",
+      "observedMin": 0,
+      "observedMax": 65
+    },
+    {
+      "name": "discharge_disposition_id_12",
+      "observedMin": 0,
+      "observedMax": 75
+    },
+    {
+      "name": "discharge_disposition_id_13",
+      "observedMin": 0,
+      "observedMax": 55
+    },
+    {
+      "name": "discharge_disposition_id_14",
+      "observedMin": 0,
+      "observedMax": 75
+    },
+    {
+      "name": "discharge_disposition_id_15",
+      "observedMin": 0,
+      "observedMax": 45
+    },
+    {
+      "name": "discharge_disposition_id_16",
+      "observedMin": 0,
+      "observedMax": 75
+    },
+    {
+      "name": "discharge_disposition_id_17",
+      "observedMin": 0,
+      "observedMax": 59
+    },
+    {
+      "name": "discharge_disposition_id_18",
+      "observedMin": 0,
+      "observedMax": 85
+    },
+    {
+      "name": "discharge_disposition_id_19",
+      "observedMin": 0,
+      "observedMax": 45
+    },
+    {
+      "name": "discharge_disposition_id_20",
+      "observedMin": 0,
+      "observedMax": 75
+    },
+    {
+      "name": "discharge_disposition_id_22",
+      "observedMin": 0,
+      "observedMax": 75
+    },
+    {
+      "name": "discharge_disposition_id_23",
+      "observedMin": 0,
+      "observedMax": 65
+    },
+    {
+      "name": "discharge_disposition_id_24",
+      "observedMin": 0,
+      "observedMax": 67
+    },
+    {
+      "name": "discharge_disposition_id_25",
+      "observedMin": 0,
+      "observedMax": 55
+    },
+    {
+      "name": "discharge_disposition_id_27",
+      "observedMin": 0,
+      "observedMax": 75
+    },
+    {
+      "name": "discharge_disposition_id_28",
+      "observedMin": 0,
+      "observedMax": 55
+    },
+    {
+      "name": "medical_specialty_General practice",
+      "observedMin": 0,
+      "observedMax": 55
+    },
+    {
+      "name": "medical_specialty_Internal medicine and related",
+      "observedMin": 0,
+      "observedMax": 65
+    },
+    {
+      "name": "medical_specialty_Other",
+      "observedMin": 0,
+      "observedMax": 65
+    },
+    {
+      "name": "medical_specialty_Surgery",
+      "observedMin": 0,
+      "observedMax": 55
+    },
+    {
+      "name": "diag_1_Diabetes",
+      "observedMin": 0,
+      "observedMax": 45
+    },
+    {
+      "name": "diag_1_Musculoskeletal disease",
+      "observedMin": 0,
+      "observedMax": 85
+    },
+    {
+      "name": "diag_1_Other",
+      "observedMin": 0,
+      "observedMax": 75
+    },
+    {
+      "name": "diag_1_Respiratory disease",
+      "observedMin": 0,
+      "observedMax": 75
+    },
+    {
+      "name": "diag_2_Diabetes",
+      "observedMin": 0,
+      "observedMax": 55
+    },
+    {
+      "name": "diag_2_Musculoskeletal disease",
+      "observedMin": 0,
+      "observedMax": 64
+    },
+    {
+      "name": "diag_2_Other",
+      "observedMin": 0,
+      "observedMax": 85
+    },
+    {
+      "name": "diag_2_Respiratory disease",
+      "observedMin": 0,
+      "observedMax": 58
+    },
+    {
+      "name": "diag_3_Diabetes",
+      "observedMin": 0,
+      "observedMax": 95
+    },
+    {
+      "name": "diag_3_Musculoskeletal disease",
+      "observedMin": 0,
+      "observedMax": 51
+    },
+    {
+      "name": "diag_3_Other",
+      "observedMin": 0,
+      "observedMax": 85
+    },
+    {
+      "name": "diag_3_Respiratory disease",
+      "observedMin": 0,
+      "observedMax": 55
+    },
+    {
+      "name": "max_glu_serum_>300",
+      "observedMin": 0,
+      "observedMax": 55
+    },
+    {
+      "name": "max_glu_serum_Norm",
+      "observedMin": 0,
+      "observedMax": 75
+    }
   ]
 }
