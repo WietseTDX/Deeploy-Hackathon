@@ -1,3 +1,5 @@
+Code copy from [gitlab](https://gitlab.com/deeploy-ml/sample-models/diabetes-prediction-hackathon) for hackathon at Deeploy
+
 # Diabetes patients readmission prediction
 This repository contains an example model for predicting whether a diabetes patient will be readmitted to the hospital. 
 It uses an open dataset from the years 1999-2008 that contains 101766 records. 
