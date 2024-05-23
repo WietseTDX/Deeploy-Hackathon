@@ -1,0 +1,24 @@
+[build-system]
+requires = [ "setuptools",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diabetes-prediction-hackathon"
+readme = "README.md"
+dynamic = [ "dependencies", "version",]
+
+[tool.ruff]
+extend-include = ["*.ipynb"]
+line-length = 108
+show-fixes = true
+lint.select = [ "F", "W", "E", "I", "UP", "B", "PL", "PD"]
+lint.ignore = [ "E501",]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.setuptools]
+packages = ["notebooks", "data"]
+
+[tool.setuptools.dynamic.dependencies]
+file = "dev-requirements.txt"
